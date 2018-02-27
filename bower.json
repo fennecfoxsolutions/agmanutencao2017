@@ -1,0 +1,19 @@
+{
+  "name": "AG Solutions",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "swiper": "^3.4.2",
+    "bootstrap-sass": "^3.3.7"
+  }
+}

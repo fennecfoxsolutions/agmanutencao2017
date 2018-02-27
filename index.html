@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>AG Solutions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/plugins.css"/>
+        <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css"/>
+        <link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="parallax/parallax.min.js"></script>
+        <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
+        <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+        <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="jquery-mask/dist/jquery.mask.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header id="cabecalho">
+            <div class="swiper-container" id="slide_container_topo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="slide-topo">
+                        <div class="texto_slide">
+                            a AG está sempre preparada para oferecer uma <h1>solução inteligente e econômica</h1> para sua empresa.
+                        </div>
+                        <div class="botao">
+                            <a href="javascript:void(0)" onclick="rolar_para('#contato')">Entre em contato</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" id="slide-topo2">
+                        <div class="texto_slide">
+                            A AG MANUTENÇÃO DE EQUIPAMENTOS EM PARCERIA <h1>COM A SKYMSEN E A PRÁTICA.</h1> CONFIRA OS PRODUTOS DISPONIBILIZADOS PARA A SUA EMPRESA.
+                        </div>
+                        <div class="botao">
+                            <a href="javascript:void(0)" onclick="rolar_para('#produtos')">Produtos</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" id="slide-topo3">
+                        <div class="texto_slide">
+                            na ag manutenção você encontra <h1>experiência, organização e</br> comprometimento com a sua empresa</h1>
+                        </div>
+                        <div class="botao">
+                            <a href="javascript:void(0)" onclick="rolar_para('#sobre')">Sobre a AG</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination swiper-pagination-white" id="slide_pag_topo"></div>
+                
+                <div class="swiper-button-prev swiper-button-white" id="slide_butprev_topo"></div>
+                <div class="swiper-button-next swiper-button-white" id="slide_butnext_topo"></div>
+                
+            </div>
+            <nav class="navbar navbar-default menu" id="menuHeader">
+                <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id="btnMenu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/ag-logo.png" class="img-responsive center-block" alt="Logo AG" id="logo-menu"/></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class= "active">
+                            <a href="javascript:void(0)" onclick="rolar_para('#cabecalho');fechar_menu()">HOME</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="rolar_para('#servicos');fechar_menu()">SERVIÇOS</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="rolar_para('#teste');fechar_menu()">A EMPRESA</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="rolar_para('#produtos');fechar_menu()">PRODUTOS</a>
+                            </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="rolar_para('#contato');fechar_menu()">CONTATO</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <section id="servicos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="titulo">Serviços</h2>
+                        <span class="barra"></span>
+                        <p class="paragrafo">Oferecemos serviços de qualidade para sua cozinha, garantimos um
+    ótimo funcionamento para os equipamentos de sua empresa, 
+    além de um serviço rápido e de preços justos.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="servicos-item">
+                            <img class="img-responsive center-block" id="man-c" src="images/manutencao-c.png" alt="Manutenção Corretiva"/>
+                            <h3>Manutenção Corretiva</h3>
+                            <p>É a restauração de um equipamento após ter cessado ou diminuído sua capacidade de exercer as funções as quais foi projetado.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="servicos-item">
+                            <img class="img-responsive center-block" id="man-p" src="images/manutencao-p.png" alt="Manutenção Preventiva"/>
+                            <h3>Manutenção Preventiva</h3>
+                            <p>Aumenta a confiabilidade e leva o equipamento a operar sempre próximo das condições em que saiu da fábrica.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="servicos-item">
+                            <img class="img-responsive center-block" id="vas" src="images/vassoura.png" alt="Limpeza de Coifa"/>
+                            <h3>Limpeza de Coifa</h3>
+                            <p>Esse equipamento impede que as paredes e o ambiente fiquem oleosos.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="servicos-item">
+                            <img class="img-responsive center-block" id="man" src="images/manutencao.png" alt="Manutenção"/>
+                            <h3>Manutenção</h3>
+                            <p>Fazemos manutenção em todos os tipos de equipamentos industriais.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="servicos-item">
+                            <img class="img-responsive center-block" id="cons" src="images/manutencao-p.png" alt="Consertos"/>
+                            <h3>Consertos</h3>
+                            <p>Restauramos as peças e acessórios da sua empresa.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="servicos-item">
+                            <img class="img-responsive center-block" id="exau" src="images/exaustor.png" alt="Exaustores"/>
+                            <h3>Exaustores</h3>
+                            <p>Ajudam na ventilação de ambientes com excesso de umidade, vapor, temperatura, fumaça, entre outros.</p>
+                        </div>
+                    </div>
+                 </div> 
+            </div>
+        </section>
+        <section id="sobre">
+            <div id="teste"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="titulo">Sobre a AG</h2>
+                        <span class="barra"></span>
+                        <p class="paragrafo">7 anos com mão de obra especializada, experiência, 
+    organização e comprometimento com a sua empresa.</p>
+                        <p class="mini-texto">A AG Manutenção de Equipamentos Cozinhas industriais é uma empresa especializada na assistência técnica em equipamentos para padarias e restaurantes.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4" id="missao">
+                        <div class="item-sobre">
+                            <h3>Missão</h3>
+                            <img class="img-responsive center-block" src="images/missao.png" alt="Missão">
+                            <p>Proporcionar aos nossos clientes, responsabilidade, qualidade e segurança nos serviços prestados.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4" id="visao">
+                        <div class="item-sobre">
+                            <h3>Visão</h3>
+                            <img class="img-responsive center-block" src="images/visao.png" alt="Visão">
+                            <p>Agregar conhecimentos, visando melhoria contínua nos processos internos, na qualidade dos serviços e no relacionamento com o mercado.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4" id="valores">
+                        <div class="item-sobre">
+                            <h3>Valores</h3>
+                            <img class="img-responsive center-block" src="images/valores.png" alt="Valores">
+                            <ul>
+                                <li>Comprometimento</li>
+                                <li>Integridade</li> 
+                                <li>Credibilidade</li>
+                                <li>Transparência</li> 
+                                <li>Foco no cliente</li>
+                                <li>Total qualidade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="bndes">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h3>A ag manutenção possui cadastro para clientes bndes</h3>
+                        <span class="barra"></span>
+                        <p class="paragrafo">Para saber mais envie um e-mail ou se preferir ligue para a ag</p>
+                        <a href="#" onclick="rolar_para('#contato')">Entrar em contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="titulo">Nossos produtos</h2>
+                        <span class="barra"></span>
+                        <p class="paragrafo">Nossa empresa em parceria com a PRÁTICA e a SKYMSEN
+    representantes de vendas autorizadas, oferecemos produtos em 
+    perfeita qualidade para a sua empresa. Ligue para AG Manutenção de Equipamentos e compre o produto certo para seu negócio.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/pratica.jpg" alt="Prática" class="img-responsive center-block">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/skymsen.jpg" alt="Skymsen" class="img-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container" id="slide_container_produtos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="slide_prod_1">
+                        <img class="img-responsive" src="images/liquidificador-industrial.png" alt="Liquidificador Industrial Skymsen"/>
+                        <span class="item-produto">Liquidificador Industrial</span>
+                    </div>
+                    <div class="swiper-slide" id="slide_prod_2">    
+                        <img class="img-responsive" src="images/centrifuga-de-sucos.png" alt="Centrifuga de Sucos"/>
+                        <span class="item-produto">Centrifuga de Sucos</span>
+                    </div>
+                    <div class="swiper-slide" id="slide_prod_3">
+                        <img class="img-responsive" src="images/descascador-de-batata-industrial.png" alt="Descascador de Batata Industrial"/>
+                        <span class="item-produto">Liquidificador Industrial</span>
+                    </div>
+                    <div class="swiper-slide" id="slide_prod_4">
+                        <img class="img-responsive" src="images/forno-eletrico.png" alt="Forno Elétrico"/>
+                        <span class="item-produto">Forno Elétrico</span>
+                    </div>
+                    <div class="swiper-slide" id="slide_prod_5">
+                        <img class="img-responsive" src="images/batedeira.png" alt="Batedeira"/>
+                        <span class="item-produto">Batedeira</span>
+                    </div>
+                    <div class="swiper-slide" id="slide_prod_6">
+                        <img class="img-responsive" src="images/descascador.jpg" alt="Descascador"/>
+                        <span class="item-produto">Descascador</span>
+                    </div>
+                    <div class="swiper-slide" id="slide_prod_7">
+                        <img class="img-responsive" src="images/cortador-de-frios.png" alt="Cortador de Frios"/>
+                        <span class="item-produto">Cortador de Frios</span>
+                    </div>
+                    <div class="swiper-slide" id="slide_prod_8">
+                        <img class="img-responsive" src="images/picador-de-carne.png" alt="Picador de Carne"/>
+                        <span class="item-produto">Picador de Carne</span>
+                    </div>
+                    <div class="swiper-slide" id="slide_prod_9">  
+                        <img class="img-responsive" src="images/forno-turbo.jpg" alt="Fornos Turbo"/>
+                        <span class="item-produto">Fornos Turbo</span>
+                    </div>
+                    <div class="swiper-slide" id="slide_prod_10">
+                        <img class="img-responsive" src="images/forno-de-lastro.jpg" alt="Fornos de Lastro"/>
+                        <span class="item-produto">Fornos de Lastro</span>
+                    </div>
+                    <div class="swiper-slide" id="slide_prod_11">
+                        <img class="img-responsive" src="images/forno-rotativo.jpg" alt="Fornos Rotativos"/>
+                        <span class="item-produto">Fornos Rotativos</span>
+                    </div>
+                    <div class="swiper-slide" id="slide_prod_12">       
+                        <img class="img-responsive" src="images/forno-de-conveccao.jpg" alt="Fornos Convecção"/>
+                        <span class="item-produto">Fornos Convecção</span>
+                    </div>
+                </div>
+                <div class="swiper-pagination" id="slide_pag_prod"></div>
+                
+                <div class="swiper-button-prev" id="slide_butprev_prod"></div>
+                <div class="swiper-button-next" id="slide_butnext_prod"></div>
+                
+            </div>
+        </section>
+        <section id="clientes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="titulo">Clientes</h2>
+                        <span class="barra"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container" id="slide_container_clientes">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="slide_cli_1"> 
+                        <img class="img-responsive center-block" src="images/sapore.png" alt="Sapore" id="sapore"/>
+                    </div>    
+                    <div class="swiper-slide" id="slide_cli_2">     
+                        <img class="img-responsive center-block" src="images/sodexo.png" alt="Sodexo" id="sodexo"/>    
+                    </div>
+                    <div class="swiper-slide" id="slide_cli_3">          
+                        <img class="img-responsive center-block" src="images/hosp-santa-paula.png" alt="Hospital Santa Paula" id="hosp-santa-paula"/>
+                    </div>
+                    <div class="swiper-slide" id="slide_cli_4"> 
+                        <img class="img-responsive center-block" src="images/novelis.png" alt="Novelis" id="novelis"/>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination" id="slide_pag_cli"></div>
+                
+                <div class="swiper-button-prev" id="slide_butprev_cli"></div>
+                <div class="swiper-button-next" id="slide_butnext_cli" ></div>   
+            </div>                        
+        </section>
+        <section class="contato">
+            <div class="container" id="contato">   
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12">
+                        <h2 class="titulo">Contato</h2>
+                        <span class="barra"></span>
+                        <p class="paragrafo p-contato">Entre em contato com a nossa empresa para fazer um 
+    orçamento sem compromisso.</p>
+                    </div>
+                    <div class="col-xs-12">
+                        <form action="http://api.agmanutencaoequipamentos.com.br/servicos/v1/contato/enviar" id="form_contato" method="post">
+                            <div class="contato-nome">
+                                <input type="text" id="nome"
+                                placeholder="Nome" required minlength="3"/>
+                            </div>
+                            <div class="contato-tel">
+                                <input type="text" id="telefone" placeholder="Telefone" class="sp_celphones" required minlength="14"/>
+                            </div>
+                            <div class="contato-email">
+                                <input type="text" id="email" placeholder="E-mail" required/>
+                            </div>
+                            <div class="contato-msg">
+                                <input type="text" id="msg" placeholder="Mensagem"/>
+                            </div>
+                            <div class="botao">
+                                <input type="submit" id="btnEnviar" value="Enviar"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contato-icones">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="contato-item">
+                                <img class="img-responsive center-block" src="images/contato-telefone.png" alt="Telefone para Contato">
+                                <p>Escritório - (11) 4518-2584<br/>
+    Técnico - (11) 96862-0706</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="contato-item">
+                                <img class="img-responsive center-block" src="images/contato-email.png" alt="E-mail para Contato">
+                                <p>agcozinha@hotmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="contato-item">
+                                <img class="img-responsive center-block" src="images/contato-endereco.png" alt="Endereço">
+                                <p>Antônio Soares Filho Nº132<br/>
+        Nova Mauá - Mauá (SP)</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="contato-item">
+                                <img class="img-responsive center-block" src="images/contato-horario.png" alt="Horário de Funcionamento">
+                                <p>Segunda à Sexta-Feira<br/>
+        das 08:00 às 17:00hrs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="rodape">
+                        <div class="col-xs-12">
+                            <img class="img-responsive center-block" src="images/ag-logo-rodape.png" alt="AG Logo">
+                            <p>© COPYRIGHT 2017 - AG MANUTENÇÃO DE EQUIPAMENTOS. - TODOS OS DIREITOS RESERVADOS.</p>
+                            <p>Desenvolvido por: 
+                            <a href="http://fennecfoxsolutions.com.br/" target="_blank"><img src="images/logo-ff.png" alt="Fennec Fox Solutions" class="img-responsive">
+                            </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>        
+        var bannerHome = new Swiper('#slide_container_topo', {
+            pagination: '#slide_pag_topo',
+            nextButton: '#slide_butnext_topo',
+            prevButton: '#slide_butprev_topo',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            parallax: true,
+            autoplay: 4000,
+            autoplayDisableOnInteraction: false
+        });
+        var bannerProdutos = new Swiper ('#slide_container_produtos', {               
+            pagination: '#slide_pag_prod',
+            nextButton: '#slide_butnext_prod',
+            prevButton: '#slide_butprev_prod',
+            paginationClickable: true,
+            slidesPerView: 3,
+            loop: true,
+            direction: 'horizontal',
+            breakpoints: {
+                767:{
+                    slidesPerView: 1
+                }        
+            }
+        });
+
+        var bannerClientes = new Swiper ('#slide_container_clientes', {    
+            pagination: '#slide_pag_cli',
+            nextButton: '#slide_butnext_cli',
+            prevButton: '#slide_butprev_cli',
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 4,
+            breakpoints:{
+                767:{
+                    slidesPerView: 1
+                }
+            }
+        });
+        </script>
+    </body>
+</html>

@@ -3,7 +3,6 @@
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
   "private": true,
   "ignore": [
     "**/.*",
@@ -14,6 +13,8 @@
   ],
   "dependencies": {
     "swiper": "^3.4.2",
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "jquery-validation":"latest",
+    "bootstrap-sweetalert": "latest"
   }
 }
